@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>App</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+
+    <!-- header section starts  -->
+
+    <header>
+      <nav class="navbar">
+          <ul>
+            <li style="float:left"><a class="active" href="index.html"><span>Calc</span>Pointer</a></li>
+            <li><a class="other" href="index.html">Home</a></li>
+            <li><a class="other" href="about.html">About Us</a></li>
+            <li><a class="other" href="app.html">Calculator</a></li>
+            <li><a class="other" href="blog.html">Blog</a></li>
+            <li><a class="other" href="contact.html">Contact Us</a></li>
+          </ul>
+      </nav>
+  </header>
+
+  <!-- header section ends -->
+
+  <hr>
+
+    <section class="app">
+        <div class="title">
+            <h1>CalcPoint Calculator</h1>
+            <p>Calculate your future</p>
+        </div>
+        <table class="heads">
+            <thead>
+              <th>Credit</th>
+              <th class="gphead2">Grade</th>
+              <th class="gphead">Grade Point</th>
+            </thead>
+            <tbody id="tableBody"></tbody>
+            <tfoot>
+              <tr>
+                <td>
+                  <button type="button" class="addBTN" id="addCreditBtn">Add Space</button>
+                  <button type="button" class="calcBTN" id="calcBtn">Calculate</button>
+                </td>
+              </tr>
+            </tfoot>
+        </table>
+        <table id="tblGPAResult" class="rptTable1">
+            <tbody>
+                <tr>
+                    <td class="tagline">Total Credit in a Semester:</td>
+                    <td class="detail"><input id="TotalCH" readonly="readonly" type="text"></td>
+                </tr>
+                <tr>
+                    <td class="tagline">Semester Grade Point Average(SGPA):</td>
+                    <td class="detail"><input id="result" readonly="readonly" type="text" /></td>
+                </tr>
+                <tr>
+                    <td class="tagline">Total Grade Point in a semester:</td>
+                    <td class="detail"><input id="TotalGP" readonly="readonly" type="text" /></td>
+                </tr>
+            </tbody>
+        </table>
+        <table id="tblCGPAResult" class="rptTable2">
+          <tbody>
+          <tr>
+              <td class="tagline">Total credit hours semesters before:</td>
+              <td class="detail"><input id="beforeCH" type="text" /></td>
+          </tr>
+          <tr>
+              <td class="tagline">Your latest CGPA:</td>
+              <td class="detail"><input id="beforecgpa" type="text" /></td>
+          </tr>
+          <tr>
+              <td class="tagline1"><button type="button" id="CGPAbtn">New CGPA</button></td>
+              <td class="detail"><input id="CGPA" readonly="readonly" type="text" /></td>
+          </tr>
+          </tbody>
+        </table>
+      </section>
+
+  <!--  footer  -->
+
+    <footer class="app-footer">
+      <p>All Rights Reserved 2022&copy;</p>
+    </footer>
+
+  <!--   footer ends  -->
+    
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
